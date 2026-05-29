@@ -11,7 +11,7 @@ Todo el motor lógico ha sido precompilado utilizando Vite, entregándote un paq
 Para instalar esta librería en un servidor LogicMachine, no necesitas tocar el código fuente, solo hacer lo siguiente:
 
 1. **Sube los Archivos Compilados**:
-   Toma la carpeta `/dist` generada por Vite y sube los archivos `app-vis.css` y `app-vis.mjs` a tu LogicMachine por FTP (ejemplo: a la ruta `/user/app-vis/`).
+   Toma la carpeta `/dist` generada por Vite y subela por FTP a la LogicMachine (ejemplo: a la ruta `/user/`).
 
 2. **Inyecta el Cargador en LogicMachine**:
    Ve a la sección "Custom JavaScript" de tu visualización en la LogicMachine y pega la estructura del JSON junto con el bootstrapper.
