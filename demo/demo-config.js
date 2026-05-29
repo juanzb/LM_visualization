@@ -1,3 +1,4 @@
+(function() {
 window.appData = {
   config: {
     logo: "https://picsum.photos/200/100",
@@ -424,3 +425,17 @@ window.state = {
   currentPage: 1,
   itemsByPage: 10,
 };
+})();
+
+
+(function startBMS() {
+  const globalCss = document.createElement("link");
+  globalCss.rel = "stylesheet";
+  globalCss.href = "/user/dist/app-vis.css"; // Ruta donde subiste el CSS
+  document.head.appendChild(globalCss);
+
+  const compScript = document.createElement("script");
+  compScript.type = "module";
+  compScript.src = "/user/dist/app-vis.js"; // Ruta donde subiste el JS moderno
+  document.body.appendChild(compScript);
+})();
